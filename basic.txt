@@ -1,0 +1,21 @@
+java 
+ -> compiler 
+ -> bytecode(platform independent code)
+ -> JVM (converts in machine understandable format)
+ -> executes on your machine
+
+
+ JAVA VIRTUAL MACHINE
+ //takes byte code as input
+ //converts it to machine understandable format and
+ //run it onour machine
+
+
+ //Java Runtime Environment JRE is a superset of JVM and libraries
+
+
+ //Java Development Kit 
+ -> make sure the user can develop and run java application in their system
+
+
+ JDK -> JRE -> JVM + LIBRARIES  
