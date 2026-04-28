@@ -27,7 +27,6 @@ public class HollowBasic {
 
 
          //hollow right angle
-
          int n = 7;
 
         for(int i=1;i<=n;i++){
@@ -44,6 +43,44 @@ public class HollowBasic {
         }
         System.out.println();
         System.out.println();
+
+
+
+         //hollow triangle
+          n = 7;
+
+        for(int i=1;i<=n;i++){
+           
+            //spaces
+            int spaces = n - i ;
+            for(int k=0 ;k<spaces ;k++){
+                System.out.print("  ");
+            }
+
+            //stars
+            int k = 2*i -1 ;
+            for(int j=1;j<=k;j++){
+                 if(i==1 || i==n || j==1 || j==k ){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+
+            System.out.println();  
+        }
+
+        System.out.println();
+        System.out.println();
+
+
+
+        
+
+
+
+
 
         
 

@@ -8,19 +8,19 @@ public class butterfly {
 
             //left triangle
             for(int j=1;j<=i;j++){
-                System.out.print("*");
+                System.out.print("* ");
             }
 
             //middle spaces
             int spaces = lines-i;
             spaces=spaces*2;
             for(int j=1;j<=spaces;j++){
-                System.out.print(" ");
+                System.out.print("  ");
             }
 
             //right triangle
             for(int j=1;j<=i;j++){
-                System.out.print("*");
+                System.out.print("* ");
             }
 
 
@@ -32,19 +32,19 @@ public class butterfly {
 
             //left triangle
             for(int j=1;j<=i;j++){
-                System.out.print("*");
+                System.out.print("* ");
             }
 
             //middle spaces
             int spaces = lines-i;
             spaces=spaces*2;
             for(int j=1;j<=spaces;j++){
-                System.out.print(" ");
+                System.out.print("  ");
             }
 
             //right triangle
             for(int j=1;j<=i;j++){
-                System.out.print("*");
+                System.out.print("* ");
             }
 
 

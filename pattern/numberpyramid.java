@@ -194,5 +194,40 @@ public class numberpyramid {
             }
             System.out.println();
         }
+
+        System.out.println();
+        System.out.println("12)");
+
+        //         1
+        //       1 2 1
+        //     1 2 3 2 1
+        //   1 2 3 4 3 2 1
+        // 1 2 3 4 5 4 3 2 1
+
+        int m = 5;
+
+        for (int i = 1; i <= m; i++) {
+
+            // spaces
+            int spaces = m - i;
+            for (int j = 0; j < spaces; j++) {
+                System.out.print("  ");
+            }
+
+            // numbers
+            int num = i + 1;
+            for (int o = 1; o < num; o++) {
+                System.out.print(o + " ");
+            }
+
+            // repeat num
+            int rem = num - 2;
+            for (int r = rem; r >= 1; r--) {
+                System.out.print(r + " ");
+            }
+
+            System.out.println();
+
+        }
     }
 }
