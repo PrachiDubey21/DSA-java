@@ -5,7 +5,7 @@ public class HollowBasic {
         //for boundary condition
         //one of the row and columns must be either 1st and last
 
-        //hollow rectangle
+        //Hollow rectangle
         int row=5;
         int col=7;
 
@@ -26,7 +26,7 @@ public class HollowBasic {
 
 
 
-         //hollow right angle
+         //Hollow right angle
          int n = 7;
 
         for(int i=1;i<=n;i++){
@@ -46,7 +46,7 @@ public class HollowBasic {
 
 
 
-         //hollow triangle
+         //Hollow triangle
           n = 7;
 
         for(int i=1;i<=n;i++){
