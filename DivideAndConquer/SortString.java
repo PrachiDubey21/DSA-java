@@ -1,5 +1,5 @@
 public class SortString {
-
+    
     // Function to apply merge sort on a String array
     public static String[] mergeSort(String[] arr, int lo, int hi) {
 
