@@ -3,7 +3,7 @@ import java.util.*;
 public class ContiguousArray {
     public static void main(String[] args) {
 
-        int[] nums = {0, 1, 0, 0, 1, 1, 0};
+        int[] nums = { 0, 1, 0, 0, 1, 1, 0 };
 
         // prefixSum -> first index
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -14,26 +14,24 @@ public class ContiguousArray {
         int sum = 0;
         int maxLength = 0;
 
-        for(int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
 
             // 0 -> -1
             // 1 -> +1
-            if(nums[i] == 0) {
+            if (nums[i] == 0) {
                 sum = sum - 1;
-            }
-            else {
+            } else {
                 sum = sum + 1;
             }
 
             // If prefix sum already exists
-            if(map.containsKey(sum)) {
-            
+            if (map.containsKey(sum)) {
+
                 int length = i - map.get(sum);
 
                 // Update maximum length
                 maxLength = Math.max(maxLength, length);
-            }
-            else {
+            } else {
                 // Store first occurrence
                 map.put(sum, i);
             }
@@ -42,5 +40,5 @@ public class ContiguousArray {
         // Print answer
         System.out.println("Maximum Length = " + maxLength);
     }
-    
+
 }
