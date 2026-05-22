@@ -9,6 +9,7 @@ public class JumpGame3 {
 
     }
 
+    //DFS
     public static boolean dfs(int[] arr, int index, boolean[] visited) {
 
         if(index < 0 || index >= arr.length) {
