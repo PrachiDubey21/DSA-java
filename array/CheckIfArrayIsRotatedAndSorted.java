@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class CheckIfArrayIsRotatedAndSorted {
+
+    public static boolean check(int[] nums) {
+
+        int count = 0;
+        int n = nums.length;
+
+        for (int i = 0; i < n; i++) {
+
+            int next = (i + 1) % n;
+
+            if (nums[i] > nums[next]) {
+                count++;
+            }
+        }
+
+        return count <= 1;
+    }
+
+    public static void main(String[] args) {
+
+        int[] nums = { 3, 4, 5, 1, 2 };
+
+        boolean result = check(nums);
+        System.out.println(result);
+
+    }
+
+}
