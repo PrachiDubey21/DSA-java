@@ -5,10 +5,12 @@ java
  -> executes on your machine
 
 
- JAVA VIRTUAL MACHINE
+
+ JAVA VIRTUAL MACHINE(JVM)
  //takes byte code as input
  //converts it to machine understandable format and
  //run it onour machine
+
 
 
  //Java Runtime Environment JRE is a superset of JVM and libraries
