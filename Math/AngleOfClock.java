@@ -8,8 +8,8 @@ public class AngleOfClock {
         double minuteHand = minutes * 6;
 
         double diff = Math.abs(hourHand - minuteHand);
-
         return Math.min(diff, 360 - diff);
+
     }
 
     public static void main(String[] args) {
