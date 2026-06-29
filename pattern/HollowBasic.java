@@ -25,7 +25,7 @@ public class HollowBasic {
         System.out.println();
 
 
-
+        
          //Hollow right angle
          int n = 7;
 
