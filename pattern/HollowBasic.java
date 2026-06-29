@@ -75,18 +75,6 @@ public class HollowBasic {
         System.out.println();
 
 
-
-        
-
-
-
-
-
-        
-
-
-
     }
-
     
 }
