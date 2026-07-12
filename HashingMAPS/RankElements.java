@@ -9,13 +9,13 @@ public class RankElements {
 
         HashMap<Integer, Integer> map = new HashMap<>();
 
-        int rank = 1;
+        int j = 1;
 
         for (int num : temp) {
 
             if (!map.containsKey(num)) {
-                map.put(num, rank);
-                rank++;
+                map.put(num, j);
+                j++;
             }
         }
 
