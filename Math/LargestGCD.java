@@ -41,8 +41,6 @@ public class LargestGCD {
 
         int result = findGCD(nums);
         System.out.println("GCD = " + result);
-        
+
     }
 }
-    
-
