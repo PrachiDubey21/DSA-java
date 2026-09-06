@@ -41,7 +41,7 @@ public class DistinctSubSequence {
         String t = "rabbit";
 
         int ans = numDistinct(s, t);
-
         System.out.println(ans);
+        
     }
 }
