@@ -60,7 +60,7 @@ public class BTLevelOrderTraversal {
         root.right.right = new TreeNode(7);
 
         System.out.println(levelOrder(root));
-        
+
     }
     
 }
