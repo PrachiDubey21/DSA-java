@@ -1,6 +1,8 @@
 import java.util.*;
 
-public class MinOperToMakeParenthesisValid {  public static int minAddToMakeValid(String s) {
+public class MinOperToMakeParenthesisValid {
+
+    public static int minAddToMakeValid(String s) {
 
         int open = 0;
         int op = 0;
@@ -11,13 +13,11 @@ public class MinOperToMakeParenthesisValid {  public static int minAddToMakeVali
 
             if (ch == '(') {
                 open++;
-            }
-            else {
+            } else {
 
                 if (open > 0) {
                     open--;
-                }
-                else {
+                } else {
                     op++;
                 }
             }
@@ -34,5 +34,5 @@ public class MinOperToMakeParenthesisValid {  public static int minAddToMakeVali
         System.out.println(result);
 
     }
-    
+
 }
