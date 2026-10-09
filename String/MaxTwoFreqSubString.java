@@ -29,7 +29,7 @@ public class MaxTwoFreqSubString {
 
     public static void main(String[] args) {
 
-        String s = "bcbbbcba";
+        String s = "bcbbbcbab";
 
         int result = maximumLengthSubstring(s);
         System.out.println(result);
