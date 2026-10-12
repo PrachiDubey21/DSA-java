@@ -6,28 +6,35 @@ public class MaximizeSum {
 
         int MOD = 1_000_000_007;
         int[] bits = new int[32];
+        long ans = 0;
 
-        for (int num : nums) {
-            for (int i = 0; i < 32; i++) {
-                if ((num & (1 << i)) != 0) {
-                    bits[i]++;
+        for (int i = 0; i < nums.size(); i++) {
+
+            int num = nums.get(i);
+
+            for (int j = 0; j < 32; j++) {
+                int bit = num & (1 << j);
+
+                if (bit != 0) {
+                    bits[j]++;
                 }
             }
         }
 
-        long ans = 0;
-
         for (int i = 0; i < k; i++) {
-            long num = 0;
+            long digit = 0;
 
             for (int j = 0; j < 32; j++) {
-                if (bits[j] > 0) {
-                    num |= (1L << j);
+
+                if (bits[j] >= 1) {
+                    long bit = 1L << j;
+                    digit = digit | bit;
                     bits[j]--;
                 }
             }
 
-            ans = (ans + num * num) % MOD;
+            long num = digit * digit;
+            ans = (ans + num) % MOD;
         }
 
         return (int) ans;
@@ -40,6 +47,6 @@ public class MaximizeSum {
 
         int result = maxSum(nums, k);
         System.out.println("Maximum sum of squares: " + result);
-        
+
     }
 }
