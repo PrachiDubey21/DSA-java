@@ -31,6 +31,7 @@ public class MajorityElement2 {
                 count2--;
             }
         }
+
         count1 = 0;
         count2 = 0;
 
@@ -38,7 +39,8 @@ public class MajorityElement2 {
 
             if (nums[i] == candidate1) {
                 count1++;
-            } else if (nums[i] == candidate2) {
+            }
+            else if (nums[i] == candidate2) {
                 count2++;
             }
         }
